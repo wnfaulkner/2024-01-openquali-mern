@@ -1,7 +1,13 @@
-import { useState } from 'react'
+// AuthPage.jsx
 
-export default function AuthPage () {
-  return(
-    <h1>Auth Page</h1>
-  )
+import SignUpForm from '../../components/SignUpForm';
+import './AuthPage.css'
+
+export default function AuthPage() {
+  return (
+    <main>
+      <h1>AuthPage</h1>
+      <SignUpForm className="sign-up-form" />
+    </main>
+  );
 }
