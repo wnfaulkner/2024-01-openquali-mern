@@ -8,6 +8,7 @@ export default function LoginForm({ setUser }) {
     email: '',
     password: ''
   });
+
   const [error, setError] = useState('');
 
   function handleChange(evt) {
@@ -22,7 +23,7 @@ export default function LoginForm({ setUser }) {
     try {
       // The promise returned by the signUp service method will resolve to the user object included in the payload of the JSON Web Token (JWT)
       const user = await usersService.login(credentials);
-      console.log(user)
+      //console.log(user)
       setUser(user);
     } catch (error) {
       console.log(error)
