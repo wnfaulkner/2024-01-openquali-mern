@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import NavBar from '../../components/NavBar'
 
-export default function AuthPage () {
+export default function NewOrderPage ({ user }) {
   return(
-    <h1>New Order Page</h1>
+    <>
+      <NavBar user={user} />
+      <h1>New Order Page</h1>
+    </>
   )
 }
