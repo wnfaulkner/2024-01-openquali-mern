@@ -7,6 +7,7 @@ const User = require('../../models/user.js')
 module.exports = {
   create,
   login,
+  checkToken,
 };
 
 async function create(req, res) {
@@ -49,6 +50,11 @@ async function login(req, res) {
     // 400 = Bad Request
     res.status(400).json(err);
   }
+}
+
+function checkToken(req, res) {
+  console.log('req.user', req.user); // req.user will always be there for you when a token is sent
+  res.json(req.exp);
 }
 
 /*-- Helper Functions --*/
