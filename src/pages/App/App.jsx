@@ -15,8 +15,8 @@ function App() {
     <main className="App">
       { user ?
         <Routes>
-          <Route path="/orders/new" element={<NewOrderPage user={user} />} />
-          <Route path="/orders/history" element={<OrderHistoryPage user={user} />} />
+          <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
+          <Route path="/orders/history" element={<OrderHistoryPage user={user} setUser={setUser} />} />
         </Routes>
         :
         <AuthPage setUser={setUser} />

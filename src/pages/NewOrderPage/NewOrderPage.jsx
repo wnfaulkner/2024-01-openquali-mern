@@ -1,9 +1,9 @@
 import NavBar from '../../components/NavBar'
 
-export default function NewOrderPage ({ user }) {
+export default function NewOrderPage ({ user, setUser }) {
   return(
     <>
-      <NavBar user={user} />
+      <NavBar user={user} setUser={setUser} />
       <h1>New Order Page</h1>
     </>
   )
