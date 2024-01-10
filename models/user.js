@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
 
-const SALT_ROUNDS = 6;  // 6 is a reasonable valu
+const SALT_ROUNDS = 6;  // 6 is a reasonable value
 
 // IMPORTANT: Keeping the User model lean is always a good practice. However, it’s especially important with JWT-based authentication because the user document will be the data payload included in the JWT and you don’t want the JWT to be bigger than it has to be!
 
