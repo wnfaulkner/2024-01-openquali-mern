@@ -4,7 +4,7 @@ export default function NewOrderPage ({ user, setUser }) {
   return(
     <>
       <NavBar user={user} setUser={setUser} />
-      <h1>New Order Page</h1>
+      <h1>MAIN</h1>
     </>
   )
 }

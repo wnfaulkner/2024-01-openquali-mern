@@ -11,12 +11,7 @@ export default function NavBar ({ user, setUser }) {
   return(
     <>
       <nav>
-        <p>Welcome, {user.name}</p>
-        <a href="/orders/history" >Order History</a>
-        &nbsp;
-        |
-        &nbsp;
-        <a href="/orders/new" >New Order</a>
+        <a href="/" >Main</a>
         &nbsp;
         |
         &nbsp;
