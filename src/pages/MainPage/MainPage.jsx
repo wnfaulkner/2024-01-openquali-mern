@@ -1,10 +1,14 @@
-import NavBar from '../../components/NavBar'
+// MAIN PAGE
 
-export default function NewOrderPage ({ user, setUser }) {
+import UploadForm from '../../components/Upload/UploadForm.jsx'
+import FileList from '../../components/List/FileList.jsx'
+
+export default function MainPage ({ user, setUser }) {
   return(
     <>
-      <NavBar user={user} setUser={setUser} />
-      <h1>MAIN</h1>
+      <h1>MAIN PAGE HEADER</h1>
+      <UploadForm />
+      <FileList />
     </>
   )
 }

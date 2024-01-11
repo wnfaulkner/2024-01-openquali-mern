@@ -1,4 +1,5 @@
-// users controller
+// USERS CONTROLLER
+
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const User = require('../../models/user.js')

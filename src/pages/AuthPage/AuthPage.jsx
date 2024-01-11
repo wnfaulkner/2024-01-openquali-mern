@@ -1,7 +1,7 @@
-// AuthPage.jsx
+// AUTH PAGE
 
-import SignUpForm from '../../components/SignUpForm';
-import LoginForm from '../../components/LoginForm/LoginForm'
+import SignUpForm from '../../components/UserAuth/SignUpForm';
+import LoginForm from '../../components/UserAuth/LoginForm'
 import './AuthPage.css'
 
 export default function AuthPage({ setUser }) {

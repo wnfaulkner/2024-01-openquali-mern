@@ -1,7 +1,7 @@
 // NAV BAR
 
 import { Link } from 'react-router-dom'
-const userService = require('../utilities/users-service.js')
+const userService = require('../../utilities/users-service.js')
 
 export default function NavBar ({ user, setUser }) {
 

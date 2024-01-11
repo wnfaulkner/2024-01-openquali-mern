@@ -1,4 +1,4 @@
-// src/components/LoginForm/LoginForm.jsx
+// LOGIN FORM
 
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
