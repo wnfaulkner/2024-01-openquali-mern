@@ -17,13 +17,13 @@ function App() {
   return (
     <main className="App">
       <NavBar user={user} setUser={setUser} />
-      { user ?
+      {/* { user ? */}
         <Routes>
           <Route path="/" element={<MainPage user={user} setUser={setUser} />} />
         </Routes>
-        : 
+        {/* : 
         <AuthPage setUser={setUser} />
-      }
+      } */}
     </main>
   );
 }
